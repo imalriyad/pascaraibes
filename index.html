@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <!-- link css -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -93,46 +94,210 @@
         </swiper-container>
         <!-- sliding logo section end -->
 
-        
-    <!-- Menu input in hero section -->
- <div
-      class="d-md-flex input-div-width px-5  bottom-90 justify-content-center align-items-lg-start gap-2"
-    >
-      <input
-        class="form-control focus-ring-dark mb-2 input-width"
-        value="Adulte"
-        style="background-color: #facbcc; color: aliceblue; font-weight: 400"
-        type="text"
-        aria-label="default input example"
-      />
-      <input
-        class="form-control focus-ring-dark mb-2 input-width"
-        value="Adulte"
-        style="background-color: #facbcc; color: aliceblue; font-weight: 400"
-        type="text"
-        aria-label="default input example"
-      />
-      <input
-        class="form-control focus-ring-dark mb-2 input-width"
-        value="Adulte"
-        style="background-color: #facbcc; color: aliceblue; font-weight: 400"
-        type="text"
-        aria-label="default input example"
-      />
-      <button type="button" class="btn btn-primary btn-success">Buy</button>
-    </div>
+        <!-- Menu input in hero section -->
+        <div
+          class="d-md-flex input-div-width px-5 bottom-90 justify-content-center align-items-lg-start gap-2"
+        >
+          <!-- input feild 1 -->
+          <span
+            style="color: aliceblue"
+            class="d-flex input-width position-relative"
+          >
+            <p id="adulteQauntity" class="h5 quanitity">0</p>
+            <span class="d-flex gap-3 method">
+              <p role="button" onclick="handeAdulteQuantityPlus()" class="h2">
+                +
+              </p>
+              <p role="button" class="h2" onclick="handeAdulteQuantityMinus()">
+                -
+              </p>
+            </span>
+            <input
+              class="form-control mb-2"
+              value="Adulte"
+              style="
+                background-color: #facbcc;
+                color: aliceblue;
+                font-weight: 400;
+                padding-left: 40px;
+              "
+              type="text"
+              readonly
+              aria-label="default input example"
+            />
+          </span>
 
+          <!-- input feild 2 -->
+          <span
+            style="color: aliceblue"
+            class="d-flex input-width position-relative"
+          >
+            <p id="enfanteQauntity" class="h5 quanitity">0</p>
+            <span class="d-flex gap-3 method">
+              <p role="button" class="h2" onclick="handeEnfanteQauntityPlus()">
+                +
+              </p>
+              <p role="button" class="h2" onclick="handeEnfanteQauntityMinus()">
+                -
+              </p>
+            </span>
+            <input
+              class="form-control mb-2"
+              value="Enfante"
+              style="
+                background-color: #facbcc;
+                color: aliceblue;
+                font-weight: 400;
+                padding-left: 40px;
+              "
+              type="text"
+              readonly
+              aria-label="default input example"
+            />
+          </span>
 
+          <!-- input feild 3 -->
+
+          <span style="color: aliceblue" class="d-flex input-width">
+            <input
+            id="passInput"
+              class="form-control rounded-end-0 focus-ring-dark mb-2 btn dropdown-toggle"
+              data-bs-toggle="dropdown"
+              value="Pass   V"
+              aria-expanded="false"
+              style="
+                background-color: #facbcc;
+                color: aliceblue;
+                font-weight: 400;
+              "
+              readonly
+              type="text"
+              aria-label="default input example"
+            />
+
+            <input
+              class="form-control rounded-start-0 focus-ring-dark btn mb-2 px-5"
+              placeholder="0.0€"
+              style="
+                background-color: #facbcc;
+                color: aliceblue;
+                font-weight: 400;
+              "
+              type="text"
+              aria-label="default input example"
+            />
+            <ul class="dropdown-menu" style="background-color: #ffffe3">
+              <li class="style-border">
+                <button
+                  onclick="handleSlelectPass('Passintegral')"
+                  style="color: #aabf0b"
+                  class="dropdown-item font-medium"
+                  type="button"
+                >
+                  Passintegral    V
+                </button>
+              </li>
+              <li class="style-border">
+                <button
+                 onclick="handleSlelectPass('Guadelougpe')"
+                  style="color: #4bcfc6"
+                  class="dropdown-item font-medium"
+                  type="button"
+                >
+                  Guadelougpe    V
+                </button>
+              </li>
+              <li class="style-border">
+                <div
+                  style="color: #735043"
+                  class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start"
+                >
+                  <span id="jHourTotoal"> 0 </span>Jhour
+                  <span class="d-flex flex-row gap-3"
+                    ><p role="button" onclick="handleJhourAdd()" class="h5 mb-0">+</p>
+                    <p role="button" onclick="handleJhourMinus()" class="h5 mb-0">-</p></span
+                  >
+                </div>
+              </li>
+            </ul>
+          </span>
+
+          <div class="dropdown">
+            <button
+              style="background-color: #9d9d9c"
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-basket"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+                />
+              </svg>
+            </button>
+            <ul class="dropdown-menu" style="background-color: #ffffe3">
+              <li class="style-border">
+                <button
+                  style="color: #735043; background-color: #facbcc;"
+                  class="dropdown-item font-medium"
+                  type="button"
+                >
+                  180.00€ <span style="padding-left: 4px; color: #735043">X</span>
+                </button>
+              </li>
+              <li class="style-border">
+                <button
+                  style="color: #aabf0b"
+                  class="dropdown-item font-medium"
+                  type="button"
+                >
+                  Passintegral   <span style="padding-left: 4px; color: #aabf0b;">V</span>
+                </button>
+              </li>
+              <li class="style-border">
+                <button
+                  style="color: #4bcfc6"
+                  class="dropdown-item font-medium"
+                  type="button"
+                >
+                  Guadelougpe  <span style="padding-left: 4px; color: #4bcfc6;">V</span>
+                </button> 
+              </li>
+              <li class="style-border">
+                <div
+                  style="color: #735043"
+                  class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start"
+                >
+                  3 Jhour
+                  <span class="d-flex flex-row gap-3"
+                    ><p role="button" class="h5 mb-0">+</p>
+                    <p role="button" class="h5 mb-0">-</p></span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Hero Section end-->
 
-   
+    <!-- intregating bootrsrap popperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 
+    <!-- intregating bootrsrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+"></script>
     <!-- intregating swiperjs -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- intregating bootsrapjs -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

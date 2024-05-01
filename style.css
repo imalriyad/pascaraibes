@@ -99,3 +99,24 @@ swiper-slide img {
     height: 135px; /* Height for small devices */
   }
 }
+
+/* inout qauntity */
+
+.quanitity {
+  position: absolute;
+  left: 20px;
+  top: 18%;
+}
+
+.method {
+  position: absolute;
+  right: 20px;
+}
+
+.style-border {
+  border-bottom: 1px dotted #735043;
+}
+
+.font-medium{
+  font-weight: 600;
+}
