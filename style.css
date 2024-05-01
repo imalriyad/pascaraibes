@@ -1,0 +1,49 @@
+/* slider css */
+html,
+body {
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Hero div height */
+.custom-height-div {
+  height: 550px; /* Default height for large devices */
+}
+
+@media (max-width: 767px) {
+  .custom-height-div {
+    height: 280px; /* Height for small devices */
+  }
+}
+
+/*  width for logo */
+.custom-width-logo {
+  height: 200px; /* Default height for large devices */
+}
+
+@media (max-width: 767px) {
+  .custom-width-logo {
+    height: 135px; /* Height for small devices */
+  }
+}
