@@ -21,61 +21,120 @@
 
   <body>
     <!-- Hero Section -->
-    <header>
-      <div class="custom-height-div position-relative"
-        style="
-          background-position: center;
-          background-repeat: no-repeat;
-          object-fit: cover;
-          background-image: url('./img/herobg.png');
-        "
-      >
+    <header
+      class="custom-height-div position-relative"
+      style="
+        background-image: linear-gradient(
+          0deg,
+          hsl(344deg 94% 55%) 6%,
+          hsl(349deg 97% 63%) 20%,
+          hsl(352deg 100% 68%) 23%,
+          hsl(355deg 100% 73%) 25%,
+          hsl(358deg 100% 76%) 27%,
+          hsl(2deg 100% 79%) 29%,
+          hsl(5deg 100% 82%) 31%,
+          hsl(10deg 100% 84%) 33%,
+          hsl(15deg 100% 87%) 37%,
+          hsl(23deg 100% 89%) 43%,
+          hsl(35deg 100% 92%) 54%,
+          hsl(58deg 100% 94%) 87%
+        );
+      "
+    >
+      <img src="./img/pink-bg-2.png" style="position: absolute; bottom: 10px; height: 60px;" class="w-100" alt="">
+      <div>
         <!-- Logo -->
-        <div class="text-center pb-4 overflow-x-hidden">
+        <div class="text-center pb-4">
           <img src="./img/logo.png" class="custom-width-logo" alt="" />
         </div>
+        <!-- Logo  end-->
 
         <!-- sliding logo -->
         <swiper-container
-          class="mySwiper position-absolute bottom-0"
+          class="mySwiper bottom-150"
           autoplay-delay="2500"
           autoplay-disable-on-interaction="false"
           slides-per-view="6"
           space-between="20"
           free-mode="true"
         >
-          <swiper-slide class="h-25">
+          <swiper-slide >
             <div><img src="./img/icon/bag.svg" alt="" /></div
           ></swiper-slide>
-          <swiper-slide class="h-25">
+          <swiper-slide >
             <div><img src="./img/icon/bag.svg" alt="" /></div
           ></swiper-slide>
-          
-          <swiper-slide class="h-25">
+
+          <swiper-slide >
             <div><img src="./img/icon/bag.svg" alt="" /></div
           ></swiper-slide>
-          <swiper-slide class="h-25">
+          <swiper-slide >
             <div><img src="./img/icon/bag.svg" alt="" /></div
           ></swiper-slide>
-          
-          <swiper-slide class="h-25">
+
+          <swiper-slide >
             <div><img src="./img/icon/bag.svg" alt="" /></div
           ></swiper-slide>
-          <swiper-slide class="h-25">
+          <swiper-slide >
             <div><img src="./img/icon/bag.svg" alt="" /></div
           ></swiper-slide>
-          
-          <swiper-slide class="h-25">
+
+          <swiper-slide >
             <div><img src="./img/icon/bag.svg" alt="" /></div
           ></swiper-slide>
-          <swiper-slide class="h-25">
+          <swiper-slide>
             <div><img src="./img/icon/bag.svg" alt="" /></div
           ></swiper-slide>
-          
-          
         </swiper-container>
+        <!-- sliding logo section end -->
+
+        <!-- Menu input in hero section -->
+
+        <div class="bottom-90">
+          <div
+            class="d-md-flex justify-content-center align-items-lg-start flex-row gap-2"
+          >
+            <input
+              class="form-control focus-ring-dark mb-2"
+              value="Adulte"
+              style="
+                background-color: #facbcc;
+                color: aliceblue;
+                font-weight: 400;
+              "
+              type="text"
+              aria-label="default input example"
+            />
+            <input
+              class="form-control focus-ring-dark mb-2"
+              value="Adulte"
+              style="
+                background-color: #facbcc;
+                color: aliceblue;
+                font-weight: 400;
+              "
+              type="text"
+              aria-label="default input example"
+            />
+            <input
+              class="form-control focus-ring-dark mb-2"
+              value="Adulte"
+              style="
+                background-color: #facbcc;
+                color: aliceblue;
+                font-weight: 400;
+              "
+              type="text"
+              aria-label="default input example"
+            />
+            <button type="button" class="btn btn-primary btn-success">
+              Buy
+            </button>
+          </div>
+        </div>
       </div>
     </header>
+    <!-- Hero Section end-->
 
     <!-- intregating swiperjs -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

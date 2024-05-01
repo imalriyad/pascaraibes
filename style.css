@@ -26,14 +26,40 @@ swiper-slide img {
   object-fit: cover;
 }
 
+.bottom-150 {
+  position: absolute;
+  bottom: 150px;
+}
+
+@media (max-width: 767px) {
+  .bottom-150 {
+    position: absolute;
+    bottom: 240px;
+  }
+}
+
+.bottom-90 {
+  position: absolute;
+  bottom: 90px;
+  left: 30%;
+  right: 30%;
+}
+
+@media (max-width: 767px) {
+  .bottom-90 {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
 /* Hero div height */
 .custom-height-div {
-  height: 550px; /* Default height for large devices */
+  height: 700px; /* Default height for large devices */
 }
 
 @media (max-width: 767px) {
   .custom-height-div {
-    height: 280px; /* Height for small devices */
+    height: 550px; /* Height for small devices */
   }
 }
 
@@ -47,3 +73,5 @@ swiper-slide img {
     height: 135px; /* Height for small devices */
   }
 }
+
+
