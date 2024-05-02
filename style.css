@@ -100,8 +100,7 @@ swiper-slide img {
   }
 }
 
-/* inout qauntity */
-
+/* input qauntity */
 .quanitity {
   position: absolute;
   left: 20px;
@@ -132,4 +131,28 @@ swiper-slide img {
 }
 .bg-green:hover {
   background-color: #aabf0b;
+}
+
+
+.hidden{
+  display: flex;
+}
+@media (max-width: 767px) {
+  .hidden {
+    display: none;
+  }
+}
+
+.offer-width{
+  width: 600px;
+}
+
+@media (max-width: 767px) {
+  .offer-width {
+    width: 300px;
+  }
+}
+
+.img-width{
+  width: 90%;
 }
