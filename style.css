@@ -117,6 +117,19 @@ swiper-slide img {
   border-bottom: 1px dotted #735043;
 }
 
-.font-medium{
+.font-medium {
   font-weight: 600;
+}
+
+.bg-gray {
+  background-color: #9d9d9c;
+}
+.bg-gray:hover {
+  background-color: #9d9d9c;
+}
+.bg-green {
+  background-color: #aabf0b;
+}
+.bg-green:hover {
+  background-color: #aabf0b;
 }

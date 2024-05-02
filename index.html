@@ -157,10 +157,9 @@
           </span>
 
           <!-- input feild 3 -->
-
           <span style="color: aliceblue" class="d-flex input-width">
             <input
-            id="passInput"
+              id="passInput"
               class="form-control rounded-end-0 focus-ring-dark mb-2 btn dropdown-toggle"
               data-bs-toggle="dropdown"
               value="Pass   V"
@@ -175,7 +174,9 @@
               aria-label="default input example"
             />
 
+            <!-- Input for amount in number -->
             <input
+              id="amountNum"
               class="form-control rounded-start-0 focus-ring-dark btn mb-2 px-5"
               placeholder="0.0€"
               style="
@@ -194,17 +195,17 @@
                   class="dropdown-item font-medium"
                   type="button"
                 >
-                  Passintegral    V
+                  Passintegral V
                 </button>
               </li>
               <li class="style-border">
                 <button
-                 onclick="handleSlelectPass('Guadelougpe')"
+                  onclick="handleSlelectPass('Guadelougpe')"
                   style="color: #4bcfc6"
                   class="dropdown-item font-medium"
                   type="button"
                 >
-                  Guadelougpe    V
+                  Guadelougpe V
                 </button>
               </li>
               <li class="style-border">
@@ -214,8 +215,20 @@
                 >
                   <span id="jHourTotoal"> 0 </span>Jhour
                   <span class="d-flex flex-row gap-3"
-                    ><p role="button" onclick="handleJhourAdd()" class="h5 mb-0">+</p>
-                    <p role="button" onclick="handleJhourMinus()" class="h5 mb-0">-</p></span
+                    ><p
+                      role="button"
+                      onclick="handleJhourAdd()"
+                      class="h5 mb-0"
+                    >
+                      +
+                    </p>
+                    <p
+                      role="button"
+                      onclick="handleJhourMinus()"
+                      class="h5 mb-0"
+                    >
+                      -
+                    </p></span
                   >
                 </div>
               </li>
@@ -224,8 +237,9 @@
 
           <div class="dropdown">
             <button
-              style="background-color: #9d9d9c"
-              class="btn dropdown-toggle"
+            id="cartButton"
+              onclick="handleCart()"
+              class="btn bg-gray dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -243,14 +257,17 @@
                 />
               </svg>
             </button>
+
+            <!-- Cart info -->
             <ul class="dropdown-menu" style="background-color: #ffffe3">
               <li class="style-border">
                 <button
-                  style="color: #735043; background-color: #facbcc;"
+                  style="color: #735043; background-color: #facbcc"
                   class="dropdown-item font-medium"
                   type="button"
                 >
-                  180.00€ <span style="padding-left: 4px; color: #735043">X</span>
+                  <span id="totalAmount">180</span>.00€
+                  <span style="padding-left: 4px; color: #735043">X</span>
                 </button>
               </li>
               <li class="style-border">
@@ -259,7 +276,8 @@
                   class="dropdown-item font-medium"
                   type="button"
                 >
-                  Passintegral   <span style="padding-left: 4px; color: #aabf0b;">V</span>
+                  Passintegral
+                  <span style="padding-left: 4px; color: #aabf0b">V</span>
                 </button>
               </li>
               <li class="style-border">
@@ -268,18 +286,116 @@
                   class="dropdown-item font-medium"
                   type="button"
                 >
-                  Guadelougpe  <span style="padding-left: 4px; color: #4bcfc6;">V</span>
-                </button> 
+                  Guadelougpe
+                  <span style="padding-left: 4px; color: #4bcfc6">V</span>
+                </button>
+              </li>
+
+              <li class="style-border">
+                <div
+                  style="color: #735043"
+                  class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start"
+                >
+                  <span
+                    id="adulteQauntity2"
+                    style="
+                      background-color: #735043;
+                      text-align: center;
+                      color: #ffffe3;
+                      height: 20px;
+                      width: 20px;
+                      border-radius: 50%;
+                    "
+                    >0</span
+                  >
+                  Adulte
+                  <span class="d-flex flex-row gap-2"
+                    ><p
+                      role="button"
+                      class="h5 mb-0"
+                      onclick="handeAdulteQuantityPlus()"
+                    >
+                      +
+                    </p>
+                    <p
+                      role="button"
+                      class="h5 mb-0"
+                      onclick="handeAdulteQuantityMinus()"
+                    >
+                      -
+                    </p></span
+                  >
+                </div>
               </li>
               <li class="style-border">
                 <div
                   style="color: #735043"
                   class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start"
                 >
-                  3 Jhour
-                  <span class="d-flex flex-row gap-3"
-                    ><p role="button" class="h5 mb-0">+</p>
-                    <p role="button" class="h5 mb-0">-</p></span
+                  <span
+                    id="enfanteQauntity2"
+                    style="
+                      background-color: #735043;
+                      text-align: center;
+                      color: #ffffe3;
+                      height: 20px;
+                      width: 20px;
+                      border-radius: 50%;
+                    "
+                    >0</span
+                  >
+                  Enfante
+                  <span class="d-flex flex-row gap-2"
+                    ><p
+                      role="button"
+                      class="h5 mb-0"
+                      onclick="handeEnfanteQauntityPlus()"
+                    >
+                      +
+                    </p>
+                    <p
+                      role="button"
+                      class="h5 mb-0"
+                      onclick="handeEnfanteQauntityMinus()"
+                    >
+                      -
+                    </p></span
+                  >
+                </div>
+              </li>
+              <li class="style-border">
+                <div
+                  style="color: #735043"
+                  class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start"
+                >
+                  <span
+                    id="jHourTotoal2"
+                    style="
+                      background-color: #735043;
+                      text-align: center;
+                      color: #ffffe3;
+                      height: 20px;
+                      width: 20px;
+                      border-radius: 50%;
+                    "
+                    >0</span
+                  >
+                  Jhour
+                  <span class="d-flex flex-row gap-2"
+                    ><p
+                      role="button"
+                      onclick="handleJhourAdd()"
+                      class="h5 mb-0"
+                    >
+                      +
+                    </p>
+                    <p
+                      role="button"
+                      onclick="handleJhourMinus()"
+                      class="h5 mb-0"
+                    >
+                      -
+                    </p></span
                   >
                 </div>
               </li>

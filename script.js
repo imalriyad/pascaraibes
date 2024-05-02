@@ -1,7 +1,13 @@
 const adulteQauntityTotal = document.getElementById("adulteQauntity");
+const adulteQauntityTotal2 = document.getElementById("adulteQauntity2");
 const enfanteQauntityTotal = document.getElementById("enfanteQauntity");
+const enfanteQauntityTotal2 = document.getElementById("enfanteQauntity2");
 const jHourQauntityTotal = document.getElementById("jHourTotoal");
+const jHourQauntityTotal2 = document.getElementById("jHourTotoal2");
 const passInput = document.getElementById("passInput");
+const amountNum = document.getElementById("amountNum");
+const totalAmount = document.getElementById("totalAmount");
+const cartButton = document.getElementById("cartButton");
 
 let adulteQauntity = 0;
 let enfanteQauntity = 0;
@@ -10,6 +16,7 @@ let jHourQauntity = 0;
 const handeAdulteQuantityPlus = () => {
   adulteQauntity++;
   adulteQauntityTotal.innerHTML = adulteQauntity;
+  adulteQauntityTotal2.innerHTML = adulteQauntity;
 };
 
 const handeAdulteQuantityMinus = () => {
@@ -18,11 +25,13 @@ const handeAdulteQuantityMinus = () => {
   }
   adulteQauntity--;
   adulteQauntityTotal.innerHTML = adulteQauntity;
+  adulteQauntityTotal2.innerHTML = adulteQauntity;
 };
 
 const handeEnfanteQauntityPlus = () => {
   enfanteQauntity++;
   enfanteQauntityTotal.innerHTML = enfanteQauntity;
+  enfanteQauntityTotal2.innerHTML = enfanteQauntity;
 };
 
 const handeEnfanteQauntityMinus = () => {
@@ -31,11 +40,13 @@ const handeEnfanteQauntityMinus = () => {
   }
   enfanteQauntity--;
   enfanteQauntityTotal.innerHTML = enfanteQauntity;
+  enfanteQauntityTotal2.innerHTML = enfanteQauntity;
 };
 
 const handleJhourAdd = () => {
   jHourQauntity++;
   jHourQauntityTotal.innerHTML = jHourQauntity;
+  jHourQauntityTotal2.innerHTML = jHourQauntity;
 };
 
 const handleJhourMinus = () => {
@@ -44,11 +55,19 @@ const handleJhourMinus = () => {
   }
   jHourQauntity--;
   jHourQauntityTotal.innerHTML = jHourQauntity;
+  jHourQauntityTotal2.innerHTML = jHourQauntity;
 };
-
 
 // Handle pass Select
 const handleSlelectPass = (option) => {
   passInput.value = option;
 };
 
+// handleCart
+const handleCart = () => {
+  totalAmount.innerHTML = amountNum.value;
+  if (jHourQauntity > 0 && adulteQauntity > 0 && enfanteQauntity > 0) {
+    cartButton.classList.add("bg-green");
+    cartButton.classList.remove("bg-gray");
+  }
+};
