@@ -8,6 +8,7 @@ const passInput = document.getElementById("passInput");
 const amountNum = document.getElementById("amountNum");
 const totalAmount = document.getElementById("totalAmount");
 const cartButton = document.getElementById("cartButton");
+const tabSectionDiv = document.getElementById("tabDiv");
 
 let adulteQauntity = 0;
 let enfanteQauntity = 0;
@@ -70,4 +71,16 @@ const handleCart = () => {
     cartButton.classList.add("bg-green");
     cartButton.classList.remove("bg-gray");
   }
+};
+
+// Handale tab section backgound changes
+const handleSkyBlueTab = () => {
+  tabSectionDiv.style.backgroundImage = 'url("./img/sky-blue.png")';
+};
+
+const handleGreenTab = () => {
+  tabSectionDiv.style.backgroundImage = 'url("./img/green-bg.png")';
+};
+const handlePinkTab = () => {
+  tabSectionDiv.style.backgroundImage = 'url("./img/pink-bg.png")';
 };

@@ -195,8 +195,21 @@ swiper-slide img {
 @media (max-width: 767px) {
   .padding-top {
     padding-top: 10px;
+    
   }
 }
+/* postion styles for tab button */
+
+.position-tab{
+  position: absolute; top: -40px;
+}
+
+@media (max-width: 767px) {
+  .position-tab{
+  position: absolute; top: -23px;
+}
+}
+
 
 /* tab button style */
 .tab-button {
@@ -217,3 +230,4 @@ swiper-slide img {
   font-size: 10px;
 }
 }
+
