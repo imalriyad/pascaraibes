@@ -18,33 +18,27 @@
 
     <!-- link css -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- font linking -->
+    <link rel="stylesheet" type="text/css" href="/font/DIN Medium.ttf">
+  
+
+
   </head>
 
-  <body>
+  <body style="font-family: DIN Medium">
     <!-- Hero Section -->
     <header
       class="custom-height-div position-relative"
       style="
-        background-image: linear-gradient(
-          0deg,
-          hsl(344deg 94% 55%) 6%,
-          hsl(349deg 97% 63%) 20%,
-          hsl(352deg 100% 68%) 23%,
-          hsl(355deg 100% 73%) 25%,
-          hsl(358deg 100% 76%) 27%,
-          hsl(2deg 100% 79%) 29%,
-          hsl(5deg 100% 82%) 31%,
-          hsl(10deg 100% 84%) 33%,
-          hsl(15deg 100% 87%) 37%,
-          hsl(23deg 100% 89%) 43%,
-          hsl(35deg 100% 92%) 54%,
-          hsl(58deg 100% 94%) 87%
-        );
+        background-image: url('./img/prepare-with-your-umbrella-qm.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
       "
     >
       <img
         src="./img/pink-bg-2.png"
-        style="position: absolute; bottom: 10px; height: 60px;"
+        style="position: absolute; bottom: -10px; height: 80px;"
         class="w-100 z-0"
         alt=""
       />
@@ -61,51 +55,51 @@
           class="mySwiper bottom-150"
           autoplay-delay="2500"
           autoplay-disable-on-interaction="false"
-          slides-per-view="5"
+          slides-per-view="7"
           space-between="20"
           free-mode="true"
         >
           <swiper-slide>
-            <div><img src="./img/icon/bag.svg" alt="" /></div
+            <div><img src="./img/icon/bag.svg" alt="" class="sliderImg-wdith" /></div
           ></swiper-slide>
           <swiper-slide>
-            <div><img src="./img/icon/binoculars.svg" alt="" /></div
-          ></swiper-slide>
-
-          <swiper-slide>
-            <div><img src="./img/icon/bird.svg" alt="" /></div
+            <div><img src="./img/icon/binoculars.svg" class="sliderImg-wdith" alt="" /></div
           ></swiper-slide>
 
           <swiper-slide>
-            <div><img src="./img/icon/flower.svg" alt="" /></div
-          ></swiper-slide>
-          <swiper-slide>
-            <div><img src="./img/icon/hills.svg" alt="" /></div
-          ></swiper-slide>
-          <swiper-slide>
-            <div><img src="./img/icon/house.svg" alt="" /></div
-          ></swiper-slide>
-          <swiper-slide>
-            <div><img src="./img/icon/parasuit.svg" alt="" /></div
-          ></swiper-slide>
-          <swiper-slide>
-            <div><img src="./img/icon/printer.svg" alt="" /></div
-          ></swiper-slide>
-          <swiper-slide>
-            <div><img src="./img/icon/ship.svg" alt="" /></div
-          ></swiper-slide>
-          <swiper-slide>
-            <div><img src="./img/icon/spoons.svg" alt="" /></div
+            <div><img src="./img/icon/bird.svg" alt="" class="sliderImg-wdith" /></div
           ></swiper-slide>
 
           <swiper-slide>
-            <div><img src="./img/icon/sun.svg" alt="" /></div
+            <div><img src="./img/icon/flower.svg" class="sliderImg-wdith" alt="" /></div
           ></swiper-slide>
           <swiper-slide>
-            <div><img src="./img/icon/webcam.svg" alt="" /></div
+            <div><img src="./img/icon/hills.svg" class="sliderImg-wdith" alt="" /></div
           ></swiper-slide>
           <swiper-slide>
-            <div><img src="./img/icon/dustbin.svg" alt="" /></div
+            <div><img src="./img/icon/house.svg" class="sliderImg-wdith" alt="" /></div
+          ></swiper-slide>
+          <swiper-slide>
+            <div><img src="./img/icon/parasuit.svg" class="sliderImg-wdith" alt="" /></div
+          ></swiper-slide>
+          <swiper-slide>
+            <div><img src="./img/icon/printer.svg" class="sliderImg-wdith" alt="" /></div
+          ></swiper-slide>
+          <swiper-slide>
+            <div><img src="./img/icon/ship.svg" class="sliderImg-wdith" alt="" /></div
+          ></swiper-slide>
+          <swiper-slide>
+            <div><img src="./img/icon/spoons.svg" class="sliderImg-wdith" alt="" /></div
+          ></swiper-slide> 
+
+          <swiper-slide>
+            <div><img src="./img/icon/sun.svg" class="sliderImg-wdith" alt="" /></div
+          ></swiper-slide>
+          <swiper-slide>
+            <div><img src="./img/icon/webcam.svg" class="sliderImg-wdith" alt="" /></div
+          ></swiper-slide>
+          <swiper-slide>
+            <div><img src="./img/icon/dustbin.svg" class="sliderImg-wdith" alt="" /></div
           ></swiper-slide>
         </swiper-container>
         <!-- sliding logo section end -->
@@ -116,7 +110,7 @@
         >
           <!-- input feild 1 -->
           <span
-            style="color: aliceblue"
+            style="color: #ffffe3"
             class="d-flex input-width position-relative"
           >
             <p id="adulteQauntity" class="h5 quanitity">0</p>
@@ -131,11 +125,11 @@
             <input
               class="form-control mb-2"
               value="Adulte"
-              style="
-                background-color: #facbcc;
-                color: aliceblue;
-                font-weight: 400;
+              style="background:none;
+                color: #ffffe3;
+                  font-weight: 500;
                 padding-left: 40px;
+                 border: 1px solid #ffffe3;
               "
               type="text"
               readonly
@@ -145,7 +139,7 @@
 
           <!-- input feild 2 -->
           <span
-            style="color: aliceblue"
+            style="color: #ffffe3"
             class="d-flex input-width position-relative"
           >
             <p id="enfanteQauntity" class="h5 quanitity">0</p>
@@ -161,10 +155,11 @@
               class="form-control mb-2"
               value="Enfante"
               style="
-                background-color: #facbcc;
-                color: aliceblue;
-                font-weight: 400;
+               background:none;
+                color: #ffffe3;
+                font-weight: 500;
                 padding-left: 40px;
+                 border: 1px solid #ffffe3;
               "
               type="text"
               readonly
@@ -173,17 +168,18 @@
           </span>
 
           <!-- input feild 3 -->
-          <span style="color: aliceblue" class="d-flex input-width">
+          <span style="color: #ffffe3" class="d-flex input-width">
             <input
               id="passInput"
-              class="form-control rounded-end-0 focus-ring-dark mb-2 btn dropdown-toggle"
+              class="form-control  rounded-end-0 focus-ring-dark mb-2 btn dropdown-toggle"
               data-bs-toggle="dropdown"
               value="Pass   V"
               aria-expanded="false"
               style="
-                background-color: #facbcc;
-                color: aliceblue;
-                font-weight: 400;
+               background:none;
+                color: #ffffe3;
+                 font-weight: 500;
+                 border: 1px solid #ffffe3;
               "
               readonly
               type="text"
@@ -193,12 +189,13 @@
             <!-- Input for amount in number -->
             <input
               id="amountNum"
-              class="form-control rounded-start-0 focus-ring-dark btn mb-2 px-5"
+              class="form-control rounded-start-0 focus-ring-dark btn mb-2 px-3"
               placeholder="0.0€"
               style="
-                background-color: #facbcc;
-                color: aliceblue;
-                font-weight: 400;
+                background: none;
+                color: #ffffe3;
+                font-weight: 500;
+                border: 1px solid #ffffe3;
               "
               type="text"
               aria-label="default input example"
@@ -270,7 +267,7 @@
                 viewBox="0 0 16 16"
               >
                 <path
-                  d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+                  d="M5.507 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.507a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
                 />
               </svg>
             </button>
@@ -437,27 +434,24 @@
      
     </header>
     <!-- Hero Section end-->
-
    
- <div class="hidden justify-content-between gap-5 text-center w-50 mx-auto" style="margin-top: -60px; ">
-       <p style="background-color: #facbcc; color: #ffffe3; z-index: 10;">Nos <br>Valeurs</br> </p>
-       <p style="background-color: #facbcc; color: #ffffe3; z-index: 10;">Nos <br>Pass</br> </p>
-       <p style="background-color: #facbcc; color: #ffffe3; z-index: 10;">Nos <br>Activites</br> </p>
-       <p style="background-color: #facbcc; color: #ffffe3; z-index: 10;">Minscrire</p>
-      <p style="background-color: #facbcc; color: #ffffe3; z-index: 10;">Contact </p>
+ <div class="hidden justify-content-center gap-5 text-center  sliderImg-wdith mx-auto" style="margin-top: -60px;font-weight: bold; " >
+       <p  style=" color: #ffffe3; z-index: 10; ">Nos <br>Valeurs</br> </p>
+       <p style=" color: #ffffe3; z-index: 10;">Nos <br>Pass</br> </p>
+       <p style=" color: #ffffe3; z-index: 10;">Nos <br>Activites</br> </p>
+       <p style=" color: #ffffe3; z-index: 10;">Minscrire</p>
+      <p style=" color: #ffffe3; z-index: 10;">Contact </p>
       </div>
       
  <!-- offer section below of hero section  -->
- <div style="background-color: #FFFFE3; height: 380px;">
-   <div  style="background-color: #FFFFE3; height: 400px; margin: 0 auto;" class="shadow-lg rounded-3 offer-width" >
-      <div style="background-color: #FACBCC; width: 80%; margin: 0 auto; padding: 16px; border-radius: 6px;">
-         <img src="./img/Asset 10.png" class="img-width" alt="">
+ <div style="background-color: #FFFFE3; " class="offerSection-height">
+   <div style="background-color: #FFFFE3; " class="shadow-lg rounded-3 mx-auto offer-width" >
+      <div style=" width: 80%; margin: 0 auto; padding: 16px; border-radius: 10px;">
+         <img src="./img/Asset 1.png" class="img-width" alt="">
       </div>
-      <div style="padding: 20px;  margin: 0 auto;">
-        <p style=" font-weight: 500;color: #714E42; font-size: 18px;" >Le РasscaraïЬes est une sélection des meilleurs activités à faire en <span style="color: #4bcfc6;">GUADELOUPE</span> et en <span style="color: #aabf0b;">MARTINIQUE</span>,regroupées pour vous offrir en un seul Рassles meilleurs prix, pour votre plus grand plaisir :en <span style="color: #F8215C; font-weight:bold;">solo</span>, entre <span style="color: #F8215C; font-weight:bold;">amis</span> ou en <span style="color: #F8215C; font-weight:bold;">famille</span>.
-      </p>
-
-      <img src="./img/Asset 8.png" class="img-width" style=" margin-top: -20px;" alt="">
+      <div class="w-75 mx-auto" >
+        <img src="./img/Asset 3.png" class="mx-auto w-100"  alt="">
+      </div>
       </div>
    </div>
  </div>
@@ -465,10 +459,23 @@
   <!-- offer section below of hero section  end -->
 
   <!-- tab section start -->
-  <div style="background-image: url(./img/pitch-bg.png); width: 100%; text-align: center;">
-   <img src="./img/Asset 9.png" alt="" style="padding: 90px 0px;" class="w-75 mx-auto">
+  <div  style="background-image: url(./img/pitch-bg.png); width: 100%; text-align: center; padding: 20px;">
+   <img src="./img/Asset 6.png" alt="" class="sliderImg-wdith padding-top mx-auto">
+  
   </div>
 
+  <!-- Tab descripotion here -->
+  <div class="position-relative" style="background-image: url(./img/sky-blue.png); height: 400px; margin-top: -37px;">
+  <!-- Tab button heree -->
+   <div style="position: absolute; top: -20px;" class="container-sm d-flex justify-content-center gap-4">
+    <button style="background-color: #4bcfc6;" class="tab-button">Guadelougpe</button>
+    <button style="background-color: #aabf0b;" class="tab-button">MartiniQue</button>
+    <button style="background-color: #F7225C;" class="tab-button">Passez Vorte</button>
+    
+   </div>
+  </div>
+
+  
 
 
 
