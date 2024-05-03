@@ -195,21 +195,21 @@ swiper-slide img {
 @media (max-width: 767px) {
   .padding-top {
     padding-top: 10px;
-    
   }
 }
 /* postion styles for tab button */
 
-.position-tab{
-  position: absolute; top: -40px;
+.position-tab {
+  position: absolute;
+  top: -40px;
 }
 
 @media (max-width: 767px) {
-  .position-tab{
-  position: absolute; top: -23px;
+  .position-tab {
+    position: absolute;
+    top: -23px;
+  }
 }
-}
-
 
 /* tab button style */
 .tab-button {
@@ -218,16 +218,71 @@ swiper-slide img {
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 20px;
-  border-radius: 10px 10px 0px 0px ;
+  border-radius: 10px 10px 0px 0px;
   font-size: 14px;
   border: none;
 }
 
 @media (max-width: 767px) {
- .tab-button {
-  padding: 4px 8px;
-  border-radius: 10px 10px 0px 0px ;
-  font-size: 10px;
-}
+  .tab-button {
+    padding: 4px 8px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 10px;
+  }
 }
 
+/* tab section infos styles */
+.small-pink-box {
+  width: 130px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .small-pink-box {
+    width: 70px;
+  }
+}
+
+/* tab section slider img styles */
+.tab-slider-img {
+  width: 120px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+@media (max-width: 767px) {
+  .tab-slider-img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* slider img arrow button styles */
+
+.arrow-btn-right {
+  width: 20px;
+  position: absolute;
+  top: 40px;
+  right: -35px;
+  cursor: pointer;
+}
+.arrow-btn-left {
+  width: 20px;
+  position: absolute;
+  top: 40px;
+  left: -35px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .arrow-btn-right {
+    width: 10px;
+    top: 30px;
+    right: -20px;
+  }
+  .arrow-btn-left {
+    width: 10px;
+    top: 30px;
+    left: -20px;
+  }
+}
