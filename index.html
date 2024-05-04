@@ -445,8 +445,8 @@
       
  <!-- offer section below of hero section  -->
  <div style="background-color: #FFFFE3; " class="offerSection-height">
-   <div style="background-color: #FFFFE3; " class="shadow-lg rounded-3 mx-auto offer-width" >
-      <div style=" width: 80%; margin: 0 auto; padding: 16px; border-radius: 10px;">
+   <div style="background-color: #FFFFE3;"  class="shadow-lg rounded-3 mx-auto offer-width" >
+      <div class="sm-shadow" style=" width:80%; margin: 0 auto; padding: 16px; border-radius: 10px;">
          <img src="./img/Asset 1.png" class="img-width" alt="">
       </div>
       <div class="w-75 mx-auto" >
@@ -465,10 +465,11 @@
   </div>
 
   <!-- Tab descripotion here -->
-  <div id="tabDiv" class="position-relative" style="background-image: url(./img/sky-blue.png); height: 450px;">
+  <div id="tabDiv" class="position-relative tab-section-height" style="background-image: url(./img/sky-blue.png); background-size: cover; background-position:center;">
   <!-- Tab button heree -->
-   <div  class="container-sm d-flex position-tab justify-content-center gap-4">
-    <button onclick="handleSkyBlueTab()" style="background-color: #4bcfc6;" class="tab-button">Guadelougpe</button>
+   
+    <div class="d-flex  position-tab justify-content-center gap-4">
+     <button onclick="handleSkyBlueTab()" style="background-color: #4bcfc6;" class="tab-button">Guadelougpe</button>
     <button onclick="handleGreenTab()" style="background-color: #aabf0b;" class="tab-button">MartiniQue</button>
     <button onclick="handlePinkTab()" style="background-color: #F7225C;" class="tab-button">Passez Vorte</button>
    </div>
@@ -477,35 +478,44 @@
    <!-- Tab section info starts here -->
    <div class="offer-width mx-auto" style="padding: 45px 0px 45px 0px;">
    <div class="d-flex w-100 flex-row gap-5 justify-content-between ">
-    <div class="d-flex flex-column justify-content-between gap-5">
+    <div class="d-flex flex-column justify-content-around gap-4">
      <img src="./img/small-pink-box.png" class="small-pink-box" alt="">
     <img src="./img/small-pink-box2.png" class="small-pink-box" alt="">
    </div>
 
    <div class="d-flex position-relative flex-column justify-content-around gap-5">
-    
     <!-- silder in tab section -1 starts-->
    <img src="./img/icon/left arrow.svg" class="arrow-btn-left" alt="">
     <img src="./img/icon/right arrow.svg"  class="arrow-btn-right" alt="">
    <div class="d-flex flex-row justify-content-between gap-5 align-items-center">
   
-    <img src="./img/prepare-with-your-umbrella-qm.jpg" class="tab-slider-img" alt="">
-    <img src="./img/prepare-with-your-umbrella-qm.jpg" class="tab-slider-img hidden" alt="">
-       
+    <div class="d-flex flex-column ">
+      <img src="./img/prepare-with-your-umbrella-qm.jpg" class="tab-slider-img" alt="">  <span class="text-uppercase font-medium text-center text-size ">Le Pays Dey <br>
+    Le Canne</span>
+    </div>
+
+   <div class="hidden">
+        <span class="d-flex flex-column"><img src="./img/prepare-with-your-umbrella-qm.jpg" class="tab-slider-img " alt="">  <span  class="text-uppercase font-medium text-center text-size ">DISTILLERIE <br>
+    BELLEVUE</span></span>
+    </div>
    </div>
+
   <!-- silder in tab section -1 end-->
 
     <!-- silder in tab section -2 starts-->
    <div class="d-flex position-relative flex-row justify-content-between gap-5 align-items-center">
     <img src="./img/icon/left arrow.svg" class="arrow-btn-left" alt="">
     <img src="./img/icon/right arrow.svg"  class="arrow-btn-right" alt="">
-    <img src="./img/prepare-with-your-umbrella-qm.jpg" class="tab-slider-img" alt="">
-    <img src="./img/prepare-with-your-umbrella-qm.jpg" class="tab-slider-img hidden" alt="">
-      
+    <div class="d-flex flex-column ">
+      <img src="./img/prepare-with-your-umbrella-qm.jpg" class="tab-slider-img" alt=""><span  class="text-uppercase font-medium text-center text-size ">Le Pays Dey <br>
+    Le Canne</span>
+    </div>
+    
+    <div class="hidden">
+        <span class="d-flex flex-column"><img src="./img/prepare-with-your-umbrella-qm.jpg" class="tab-slider-img " alt="">  <span  class="text-uppercase font-medium text-center text-size ">DISTILLERIE <br>
+    BELLEVUE</span></span>
+    </div> 
    </div>
-  <!-- silder in tab section -2 end-->
-  
- 
    </div>
 
    <div class="d-flex flex-column justify-content-around gap-2">
@@ -515,17 +525,93 @@
    </div>
    </div>
   </div>
+     <!-- silder in tab section -2 end-->
 
+  <!-- pass caraibes section -->
+  <div class="position-relative">
+    <div class="w-100 text-center position-relative" style="background-image: url('./img/pitch-bg-sm.png'); height: 80px;">
+      <img src="./img/Asset 17.png" class="custom-width-logo" style="margin-top: -2px; " alt="">
+      <img src="./img/Asset 18.png" style="position: absolute; right: 55px; top: 75px;" class="hidden" alt="">
+ </div >
+ <div class="w-100" style="background-image: url('./img/green-bg.png');height: auto; background-size: cover; background-position:center; ">
+  <div style="padding-top: 100px; text-align: center;">
+    <img src="./img/Asset 19.png" class="man-img-width" alt="">
+  </div>
   
+ </div>
+ <img src="./img/Asset 21.png" class="ribon" alt="">
+  </div>
 
+<!-- text section that have bg with hands img -->
+<div style="background-image:url('./img/Asset\ 24.png');height: 400px; background-size: cover; background-position:center; ">
 
+ <div style="padding: 60px 0px 10px 0px; text-align: center;">
+   <img src="./img/Asset26.png" class="assets26width" alt="">
+ </div>
 
+  <p class="font-size" style="color: #FFFFE3; padding:20px ; text-align: center; margin: -5px auto; "><span style="font-size: 28px;">Chez Pass<span style="font-weight: bold;">caraïbes</span>, <br></span>Nous mettons <span style="font-weight: bold;">l’humain</span> au centre de nos préoccupations.
+C’est pourquoi, nous pronons un <span style="font-weight: bold;">tourisme durable</span> en soutenant et en faisant la promotion d’offres touristiques <span style="font-weight: bold;">locales</span>. Nous permettons ainsi aux voyageurs du monde entier de profiter des <span style="font-weight: bold;">meilleures activitésau</span> au <span style="font-weight: bold;">meilleur prix !</span> </p>
+</div>
 
+<!-- Form section start here -->
+ <div style="background-color: #FFFFE3; height: 350px; text-align: center; position: relative; ">
+  <div class="form-div-lg d-flex flex-column justify-content-between">
+    <div class="d-flex flex-column gap-2 text-section-from  ">
+    <img src="./img/Asset 27.png" class="form-img" alt="">
+  <p style="color: #735043;" class="font-medium form-text">Vous avez besoin d’un renseignementconcernant votre PassCaraïbes ?Nous nous ferons un plaisir de répondreà toutes vos questions !</p>
+  </div>
 
+  <!-- From div -->
+  <div  style="background-color: #FFFFE3; height: auto; width: 300px;box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+ " class="rounded-3 form-div">
+    <h4 style="color: #735043; font-weight: bold; ">Demande d'information</h4>
+    <div style="padding-top:20px; text-align: left;">
+  <label for="exampleFormControlInput1" style="color: #735043;" class="form-label font-medium">Votre Nom (obligatoire)</label>
+  <input type="email" style="outline: 1px solid #735043;"
+ class="form-control-sm form-control bg-transparent" id="exampleFormControlInput1">
 
+  <label for="exampleFormControlInput1" style="color: #735043;" class="form-label font-medium"> Votre adresse e-mail (obligatoire)</label>
+  <input type="email" style="outline: 1px solid #735043;"
+ class="form-control-sm form-control bg-transparent input-sm" id="exampleFormControlInput1">
+</div>
 
+<div class="mt-3 " style="text-align: left;">
+  <label for="exampleFormControlTextarea1" style="color: #735043;" class="form-label font-medium">Votre message</label>
+  <textarea class="form-control bg-transparent" style="outline: 1px solid #735043;" id="exampleFormControlTextarea1" rows="2"></textarea>
+</div>
 
+<div style="text-align: right; padding-top: 6px;">
+  <Button style="background-color: #F7225C; color: #FFFFE3; font-weight: 900; padding: 4px 20px;border-radius: 8px;">Envoyer</Button>
+</div>
+  </div>
+  </div>
+ </div>
+<!-- From section end here -->
+<div style="background-image: url('./img/pink-bg-2.png');height: auto;background-size: cover; background-position:center; padding-bottom: 50px;" class="margin">
+ <div  class="footer-text">
+   <div style="color: #F0EDE5;">
+    <p style="font-size: 24px; margin-bottom: 10px; color: aliceblue;">Passs<span style="font-weight: bold; ">Caraïbes</span></p>
+    <p style="margin-bottom: 10px;">Nous CONTACTER</p>
+    <p style="margin-bottom: 10px;">passcaraïbes@gmail.com</p>
+    <p style="margin-bottom: 10px;">0690 82 36 10</p>
+  </div>
 
+   <div style="color: #F0EDE5;">
+    <p style="font-size: 24px; margin-bottom: 10px; font-weight: bold;color: aliceblue;">Informations</p>
+    <p style="margin-bottom: 10px;">Consulter Les Cgv</p>
+    <p style="margin-bottom: 10px;">Consulter Les Faq</p>
+    <p style="margin-bottom: 10px;">Demande Dinformations</p>
+    <p style="margin-bottom: 10px;">Conditions</p>
+    <p style="margin-bottom: 10px;">Poltique de condifidentialite</p>
+    <p style="margin-bottom: 10px;">Plan du site</p>
+  </div>
+
+   <div style="color: aliceblue;">
+    <p style="font-size: 24px; margin-bottom: 10px; font-weight: bold;">Suivez-nous</p>
+    
+  </div>
+ </div>
+</div>
 
     <!-- intregating bootrsrap popperjs -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
