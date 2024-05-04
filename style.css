@@ -45,7 +45,7 @@ swiper-slide img {
 
 @media (max-width: 767px) {
   .sliderImg-wdith {
-    width: 100%;
+    width: 60px;
   }
 }
 
@@ -457,7 +457,23 @@ swiper-slide img {
   .footer-text {
     width: 100%;
     padding: 20px;
-     flex-direction: column;
-     height: auto;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+/* Footer logo */
+.footer-logo {
+  width: 300px;
+}
+.margin-footer {
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .footer-logo {
+    width: 200px;
+  }
+  .margin-footer {
+    margin: 0;
   }
 }
