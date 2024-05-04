@@ -84,3 +84,77 @@ const handleGreenTab = () => {
 const handlePinkTab = () => {
   tabSectionDiv.style.backgroundImage = 'url("./img/pink-bg.png")';
 };
+
+// offer section slider 1
+
+const sliderOneImgLinks = [
+  "https://i.ibb.co/9NyCDvM/image4.jpg",
+  "https://i.ibb.co/KV5fzd6/image3.jpg",
+  "https://i.ibb.co/qMq3ZqW/image1.jpg",
+  "https://i.ibb.co/y5Z4X0q/image2.jpg",
+];
+
+let currentIndex = 0;
+
+function handleLeftButton() {
+  currentIndex =
+    (currentIndex - 1 + sliderOneImgLinks.length) % sliderOneImgLinks.length;
+  updateSlider();
+}
+
+function handleRightButton() {
+  currentIndex = (currentIndex + 1) % sliderOneImgLinks.length;
+  updateSlider();
+}
+
+function updateSlider() {
+  const leftBoxImage = document.getElementById("leftBoxImage");
+  const rightBoxImage = document.getElementById("rightBoxImage");
+
+  // Change only one image based on the direction of the button click
+  if (currentIndex % 2 === 0) {
+    leftBoxImage.src = sliderOneImgLinks[currentIndex];
+  } else {
+    rightBoxImage.src = sliderOneImgLinks[currentIndex];
+  }
+}
+
+// Initial call to update slider with first image
+updateSlider();
+
+
+
+const sliderTwoImgLinks = [
+  "https://i.ibb.co/9NyCDvM/image4.jpg",
+  "https://i.ibb.co/KV5fzd6/image3.jpg",
+  "https://i.ibb.co/qMq3ZqW/image1.jpg",
+  "https://i.ibb.co/y5Z4X0q/image2.jpg",
+];
+
+let currentSlide = 0;
+
+function handleLeftButton2() {
+  currentSlide =
+    (currentSlide - 1 + sliderTwoImgLinks.length) % sliderTwoImgLinks.length;
+  updateSlider2(); // Call updateSlider2 instead of updateSlider
+}
+
+function handleRightButton2() {
+  currentSlide = (currentSlide + 1) % sliderTwoImgLinks.length;
+  updateSlider2(); // Call updateSlider2 instead of updateSlider
+}
+
+function updateSlider2() {
+  const leftBoxImage1 = document.getElementById("leftBoxImage1");
+  const rightBoxImage1 = document.getElementById("rightBoxImage1");
+  // Change only one image based on the direction of the button click
+  if (currentSlide % 2 === 0) {
+    leftBoxImage1.src = sliderTwoImgLinks[currentSlide];
+  } else {
+    rightBoxImage1.src = sliderTwoImgLinks[currentSlide];
+  }
+}
+
+// Initial call to update slider with first image
+updateSlider2();
+
