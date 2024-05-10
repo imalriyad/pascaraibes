@@ -54,9 +54,10 @@ textarea:focus {
   bottom: 150px;
 }
 
+
 /* Slider image width */
 .sliderImg-wdith {
-  width: 60%;
+  width: 80px ;
 }
 
 /* Tab section slider */
@@ -72,6 +73,12 @@ textarea:focus {
   color: #ffffe3;
 }
 
+/* overlay image styles  */
+.overlay-styles{
+  position: absolute;
+  object-fit: cover;
+  bottom: 70px; 
+}
 /* input div width */
 .input-div-width {
   width: 100%;

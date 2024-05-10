@@ -39,6 +39,9 @@
   <header class="custom-height-div position-relative">
     <img src="./img/pink-bg-2.png" class="w-100 z-0 here_footerImage" alt="" />
 
+    <!-- Overlay image -->
+     <img src="./asset/png/overFlow.png" class="overlay-styles opacity-25 w-100" alt="">
+     
     <div>
       <!-- Logo -->
       <div class="text-center pb-4">
@@ -146,7 +149,7 @@
               </button>
             </li>
             <li class="style-border">
-              <div style="color: #735043" class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start">
+              <div style="color: #735043" class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start"  onclick="stopPropagation(event)">
                 <span id="jHourTotoal"> 0 </span>Jhour
                 <span class="d-flex flex-row gap-3">
                   <p role="button" onclick="handleJhourAdd()" class="h5 mb-0">
@@ -193,22 +196,23 @@
               </button>
             </li>
 
+           <li class="style-border">
+  <div style="color: #735043" class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start" onclick="stopPropagation(event)">
+    <span id="adulteQauntity2" class="input-amount">0</span>
+    Adulte
+    <span class="d-flex flex-row gap-2">
+      <p role="button" class="h5 mb-0" onclick="handeAdulteQuantityPlus()">
+        +
+      </p>
+      <p role="button" class="h5 mb-0" onclick="handeAdulteQuantityMinus()">
+        -
+      </p>
+    </span>
+  </div>
+</li>
+
             <li class="style-border">
-              <div style="color: #735043" class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start">
-                <span id="adulteQauntity2" class="input-amount">0</span>
-                Adulte
-                <span class="d-flex flex-row gap-2">
-                  <p role="button" class="h5 mb-0" onclick="handeAdulteQuantityPlus()">
-                    +
-                  </p>
-                  <p role="button" class="h5 mb-0" onclick="handeAdulteQuantityMinus()">
-                    -
-                  </p>
-                </span>
-              </div>
-            </li>
-            <li class="style-border">
-              <div style="color: #735043" class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start">
+              <div style="color: #735043" class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start" onclick="stopPropagation(event)" >
                 <span id="enfanteQauntity2" class="input-amount">0</span>
                 Enfante
                 <span class="d-flex flex-row gap-2">
@@ -222,7 +226,7 @@
               </div>
             </li>
             <li class="style-border">
-              <div style="color: #735043" class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start">
+              <div style="color: #735043" class="dropdown-item font-medium d-flex gap-3 flex-row align-content-start" onclick="stopPropagation(event)">
                 <span id="jHourTotoal2" class="input-amount">0</span>
                 Jhour
                 <span class="d-flex flex-row gap-2">
@@ -611,7 +615,8 @@ Tab 2 Content
   <!-- intregating bootrsrap  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- intregating swiperjs -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
   <script src="script.js"></script>
 </body>
 

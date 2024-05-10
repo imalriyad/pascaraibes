@@ -85,7 +85,6 @@ const handlePinkTab = () => {
   tabSectionDiv.style.backgroundImage = 'url("./img/pink-bg.png")';
 };
 
-
 const swiperEl = document.getElementById("swiper-container");
 const swiperElTwo = document.getElementById("swiper-containerTwo");
 
@@ -109,14 +108,13 @@ const handleNextTwo = () => {
   console.log("next");
 };
 
-
 const swiperParams = {
   slidesPerView: 2,
   spaceBetween: -60,
   breakpoints: {
     640: {
       slidesPerView: 1,
-      spaceBetween:10,
+      spaceBetween: 10,
     },
     1024: {
       slidesPerView: 2,
@@ -135,3 +133,8 @@ Object.assign(swiperElTwo, swiperParams);
 
 // and now initialize it
 swiperEl.initialize();
+swiperElTwo.initialize();
+// For fixing dropdown closing
+function stopPropagation(event) {
+  event.stopPropagation();
+}
